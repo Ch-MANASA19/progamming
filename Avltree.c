@@ -168,13 +168,7 @@ void inOrderTraversal(struct TreeNode* root) {
     }
 }
 // Function to free the memory allocated for the AVL tree
-void freeAVLTree(struct TreeNode* root) {
-    if (root != NULL) {
-        freeAVLTree(root->left);
-        freeAVLTree(root->right);
-        free(root);
-    }
-}
+
 void main() {
     struct TreeNode* root = NULL;
     int choice, key;
@@ -213,4 +207,5 @@ void main() {
 	}
     } while (choice != 4);
     getch();
+
 }
